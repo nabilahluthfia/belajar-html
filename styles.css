@@ -1,4 +1,4 @@
-* {
+/* * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
@@ -20,7 +20,7 @@ a {
     display: flex;
     gap: 10px;
     padding: 30px;
-    /* margin: 30px; */
+    /* margin: 30px;
   }
   nav ul li {
     list-style: none;
@@ -34,7 +34,6 @@ a {
     padding: 10px;
   }
 
-  /* For about */
 
   .home {
     position: relative;
@@ -63,7 +62,7 @@ a {
     margin-top: 50px;
     display: flex;
     gap: 10px;
-    /* justify-content: center; */
+    /* justify-content: center;
     align-items: center;
     padding: 10px;
 }
@@ -80,7 +79,7 @@ a {
 
 .profile img {
     /* width: 300px;
-    border-radius: 60%; */
+    border-radius: 60%;
     height:100px;
     width:100px;
     border-radius:50%;
@@ -92,7 +91,7 @@ a {
     flex-direction: column;
 }
 
-/* For contact */
+/* For contact
 .contact-page {
     display: flex;
     justify-content: center;
@@ -100,17 +99,17 @@ a {
     flex-direction: column;
     /* max-width: fit-content;
     margin-left: auto;
-    margin-right: auto; */
+    margin-right: auto;
 }
 
 h3 {
-    /* text-align: center; */
+    /* text-align: center;
 }
 
 .contact-container {
     /* max-width: fit-content;
     margin-left: auto;
-    margin-right: auto; */
+    margin-right: auto;
     width: 600px;
     border-radius: 5px;
     background-color: #f2f2f2;
@@ -141,4 +140,351 @@ input[type=text], select, textarea {
     background-color: #45a049;
   }
   
- 
+  */
+
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.mainNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(252, 251, 240);
+  padding: 10px;
+}
+.mainNav img {
+  width: 64px;
+}
+ul {
+  display: flex;
+  gap: 5px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #c9a016;
+}
+
+.mobileNav {
+  visibility: hidden;
+}
+
+.sidenav {
+  height: 0;
+}
+
+.mainHumberger {
+  visibility: hidden;
+  display: none;
+}
+
+/* @media (max-width: 600px) {
+    .sidenav {
+      padding-top: 15px;
+    }
+    .sidenav a {
+      font-size: 18px;
+    }
+  } */
+
+.home {
+  position: relative;
+}
+
+.home img {
+  width: 1903px;
+  height: 92.6vh;
+}
+.home h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  font-family: "Libre Baskerville", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.home-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+  padding: 10px;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px dashed #c9a016;
+  border-radius: 30px;
+  padding: 20px;
+  width: 300px;
+}
+.card img {
+  width: 100px;
+}
+.card p {
+  text-align: justify;
+  padding: 10px;
+}
+
+.FAQ {
+  margin: 20px 0;
+}
+
+.FAQ h3 {
+  text-align: center;
+}
+
+details {
+  interpolate-size: allow-keywords;
+  overflow: clip;
+  /* margin-top: 0.125em; */
+  background: #ffffff;
+  color: #333333;
+  border-radius: 3px;
+}
+
+details summary {
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding: 0.5em 0.5em 0.5em 0.7em;
+  background: #ededed;
+  color: #2b2b2b;
+  border-radius: 3px 3px 0 0;
+}
+
+details:not([open]) summary:hover,
+details:not([open]) summary:focus {
+  background: #f6f6f6;
+  color: #454545;
+}
+
+details[open] summary {
+  outline: 1px solid #003eff;
+  background: #007fff;
+  color: #ffffff;
+}
+
+details[open]::details-content {
+  height: auto;
+}
+
+details::details-content {
+  height: 0;
+  overflow-y: clip;
+  transition: content-visibility 475ms allow-discrete, height 475ms;
+}
+
+details main {
+  padding: 1em 2.2em;
+}
+
+form {
+  padding: 20px;
+  margin: 20px;
+  border: 2px solid #c9a016;
+}
+
+input:focus {
+  border: none;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  /* border-bottom: 1px solid #ccc; */
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #c9a016;
+  background: transparent;
+}
+
+input:focus {
+  background: transparent;
+}
+
+input[type="submit"] {
+  background-color: #c9a016;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+footer {
+  display: flex;
+  gap: 30px;
+  padding: 50px;
+  background: #eee;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+footer div p {
+  font-size: 10px;
+}
+
+.support {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.support ul,
+.social ul {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.support h3,
+.social h3 {
+  font-size: 25px;
+}
+
+.support ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  font-size: 20px;
+}
+
+.social ul li {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.social ul li a {
+  color: black;
+  font-size: 20px;
+}
+
+.social ul li a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+  .mobileNav {
+    visibility: visible;
+  }
+
+  .mainNav {
+    display: none;
+  }
+
+  .mainHumberger {
+    visibility: visible;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .mainHumberger img {
+    width: 40px;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+
+  .home img {
+    width: 1000px;
+    /* height: 92.6vh; */
+  }
+  .home h1 {
+    /* position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    font-size: 60px;
+    /* font-family: "Libre Baskerville", serif;
+    font-weight: 400;
+    font-style: normal; */
+  }
+
+  .home-card {
+    /* display: flex; */
+    flex-direction: column;
+  }
+  footer {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* gap: 30px;
+    padding: 50px; */
+  }
+  .social ul li,
+  .support ul li {
+    justify-content: center;
+    align-items: center;
+  }
+  .social h3,
+  .support h3 {
+    text-align: center;
+  }
+}
